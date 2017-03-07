@@ -1,0 +1,26 @@
+{
+  "name": "openwhisk-github",
+  "version": "1.0.0",
+  "description": "OpenWhisk Github Package",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lionelvillard/openwhisk-github.git"
+  },
+  "keywords": [
+    "openwhisk",
+    "github"
+  ],
+  "author": "Lionel Villard",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lionelvillard/openwhisk-github/issues"
+  },
+  "homepage": "https://github.com/lionelvillard/openwhisk-github#readme",
+  "dependencies": {
+    "swagger-openwhisk-codegen": "^1.8.1"
+  }
+}
