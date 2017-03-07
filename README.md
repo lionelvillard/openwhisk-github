@@ -10,6 +10,8 @@ Type these commands in a terminal:
 
 The `actions` directory should now be populated with `github` action wrappers.
 
+
+
 Manual deployment
 -
 
@@ -35,3 +37,10 @@ Authentication
 Several `github` APIs require authentication.
 
 For OAuth2 authentication, the recommended way is to use the [OpenWhisk OAuth package](https://github.com/starpit/openwhisk-oauth) to obtain a OAuth token. Alternatively for testing purpose, use a [Personal access token](https://github.com/settings/tokens).    
+
+
+
+API Documentation
+-
+
+Available on the [IBM API Harmony](https://apiharmony.mybluemix.net/apis/github_api)
