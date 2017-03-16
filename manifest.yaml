@@ -1,2 +1,4 @@
 package:
   name: github
+  repositories: 
+    - url: http://github.com/lionelvillard/openwhisk-github

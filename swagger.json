@@ -3374,6 +3374,7 @@
       },
       "get": {
         "description": "Get repository.",
+        "operationId": "getRepo",
         "parameters": [
           {
             "description": "Name of repository owner.",
@@ -3420,6 +3421,11 @@
             "in": "header",
             "name": "X-GitHub-Request-Id",
             "type": "integer"
+          },
+          {
+            "in": "header",
+            "name": "User-Agent",
+            "type": "string"
           }
         ],
         "responses": {
@@ -4858,6 +4864,7 @@
       },
       "get": {
         "description": "Get contents.\nThis method returns the contents of a file or directory in a repository.\nFiles and symlinks support a custom media type for getting the raw content.\nDirectories and submodules do not support custom media types.\nNote: This API supports files up to 1 megabyte in size.\nHere can be many outcomes. For details see \"http://developer.github.com/v3/repos/contents/\"\n",
+        "operationId": "getContent",
         "parameters": [
           {
             "description": "Name of repository owner.",
@@ -4922,6 +4929,11 @@
             "in": "header",
             "name": "X-GitHub-Request-Id",
             "type": "integer"
+          },
+          {
+            "in": "header",
+            "name": "User-Agent",
+            "type": "string"
           }
         ],
         "responses": {
@@ -10893,6 +10905,7 @@
     "/repos/{owner}/{repo}/readme": {
       "get": {
         "description": "Get the README.\nThis method returns the preferred README for a repository.\n",
+        "operationId": "getReadme",
         "parameters": [
           {
             "description": "Name of repository owner.",
@@ -10945,6 +10958,11 @@
             "in": "header",
             "name": "X-GitHub-Request-Id",
             "type": "integer"
+          },
+          {
+            "in": "header",
+            "name": "User-Agent",
+            "type": "string"
           }
         ],
         "responses": {
