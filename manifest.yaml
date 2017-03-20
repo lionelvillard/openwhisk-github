@@ -1,4 +1,10 @@
 package:
   name: github
-  repositories: 
+  repositories:
     - url: http://github.com/lionelvillard/openwhisk-github
+  actions:
+    createRelease:
+      version: ""
+      location: actions/createRelease.js
+      runtime: nodejs:6
+      name: "createRelease"
