@@ -1663,6 +1663,7 @@
     "/markdown": {
       "post": {
         "description": "Render an arbitrary Markdown document",
+
         "parameters": [
           {
             "description": "You can check the current version of media type in responses.\n",
@@ -1703,6 +1704,11 @@
             "schema": {
               "$ref": "#/definitions/markdown"
             }
+          },
+          {
+            "in": "header",
+            "name": "User-Agent",
+            "type": "string"
           }
         ],
         "produces": [
@@ -1724,6 +1730,7 @@
           "text/plain"
         ],
         "description": "Render a Markdown document in raw mode",
+
         "parameters": [
           {
             "description": "You can check the current version of media type in responses.\n",
@@ -1756,6 +1763,16 @@
             "in": "header",
             "name": "X-GitHub-Request-Id",
             "type": "integer"
+          },
+          {
+            "in": "header",
+            "name": "User-Agent",
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "type": "string"
           }
         ],
         "produces": [
@@ -3374,7 +3391,6 @@
       },
       "get": {
         "description": "Get repository.",
-        "operationId": "getRepo",
         "parameters": [
           {
             "description": "Name of repository owner.",
@@ -4864,7 +4880,6 @@
       },
       "get": {
         "description": "Get contents.\nThis method returns the contents of a file or directory in a repository.\nFiles and symlinks support a custom media type for getting the raw content.\nDirectories and submodules do not support custom media types.\nNote: This API supports files up to 1 megabyte in size.\nHere can be many outcomes. For details see \"http://developer.github.com/v3/repos/contents/\"\n",
-        "operationId": "getContent",
         "parameters": [
           {
             "description": "Name of repository owner.",
@@ -10905,7 +10920,6 @@
     "/repos/{owner}/{repo}/readme": {
       "get": {
         "description": "Get the README.\nThis method returns the preferred README for a repository.\n",
-        "operationId": "getReadme",
         "parameters": [
           {
             "description": "Name of repository owner.",
@@ -11043,7 +11057,7 @@
       },
       "post": {
         "description": "Create a release\nUsers with push access to the repository can create a release.\n",
-        "operationId": "createRelease",
+
         "parameters": [
           {
             "description": "Name of repository owner.",

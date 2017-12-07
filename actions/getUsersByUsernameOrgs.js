@@ -1,11 +1,8 @@
 /**
- * Create a release
-Users with push access to the repository can create a release.
-
+ * List all public organizations for a user.
  * @method
- * @name #createRelease
- * @param {string} owner - Name of repository owner.
- * @param {string} repo - Name of repository.
+ * @name #getUsersByUsernameOrgs
+ * @param {string} username - Name of user.
  * @param {string} [xGitHubMediaType] - You can check the current version of media type in responses.
 
  * @param {string} [accept] - Is used to set specified media type.
@@ -13,15 +10,7 @@ Users with push access to the repository can create a release.
  * @param {integer} [xRateLimitRemaining] - 
  * @param {integer} [xRateLimitReset] - 
  * @param {integer} [xGitHubRequestId] - 
- * @param {string} [userAgent] - 
- * @param {object} body - 
- * @param {string} [body.body] - 
- * @param {boolean} [body.draft] - 
- * @param {string} [body.name] - 
- * @param {boolean} [body.prerelease] - 
- * @param {string} body.tag_name - The name of the tag
- * @param {string} [body.target_commitish] - 
- * @param {string} access_token - The oauth access token 
+
  *
  */
 var request = require('request-promise');
@@ -32,36 +21,18 @@ function main(args) {
         var queryParameters = {};
         var headers = {};
         var form = {};
-        var path = '/repos/{owner}/{repo}/releases';
-
-        if (args.accessToken) {
-            headers['Authorization'] = 'Token ' + args.accessToken;
-        } else {
-            reject({
-                error: 'Missing authorization.'
-            });
-            return;
-        }
+        var path = '/users/{username}/orgs';
 
         headers['Content-Type'] = ['application/json'];
 
-        if (args['owner'] === undefined) {
+        if (args['username'] === undefined) {
             reject({
-                error: 'Missing required string parameter: owner'
+                error: 'Missing required string parameter: username'
             });
             return;
         }
 
-        path = path.replace('{owner}', args['owner']);
-
-        if (args['repo'] === undefined) {
-            reject({
-                error: 'Missing required string parameter: repo'
-            });
-            return;
-        }
-
-        path = path.replace('{repo}', args['repo']);
+        path = path.replace('{username}', args['username']);
 
         if (args['xGitHubMediaType'] !== undefined) {
             headers['X-GitHub-Media-Type'] = args['xGitHubMediaType'];
@@ -87,16 +58,8 @@ function main(args) {
             headers['X-GitHub-Request-Id'] = args['xGitHubRequestId'];
         }
 
-        if (args['userAgent'] !== undefined) {
-            headers['User-Agent'] = args['userAgent'];
-        }
-
-        if (args['body'] !== undefined) {
-            body = args['body'];
-        }
-
         var req = {
-            method: 'POST',
+            method: 'GET',
             uri: 'https://api.github.com' + path,
             qs: queryParameters,
             headers: headers,

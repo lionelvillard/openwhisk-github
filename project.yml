@@ -1,0 +1,736 @@
+name: github
+packages:
+  github:
+    actions:
+      getEmojis:
+        kind: nodejs
+        location: actions/getEmojis.js
+      getEvents:
+        kind: nodejs
+        location: actions/getEvents.js
+      getFeeds:
+        kind: nodejs
+        location: actions/getFeeds.js
+      getGists:
+        kind: nodejs
+        location: actions/getGists.js
+      postGists:
+        kind: nodejs
+        location: actions/postGists.js
+      getGistsPublic:
+        kind: nodejs
+        location: actions/getGistsPublic.js
+      getGistsStarred:
+        kind: nodejs
+        location: actions/getGistsStarred.js
+      deleteGistsById:
+        kind: nodejs
+        location: actions/deleteGistsById.js
+      getGistsById:
+        kind: nodejs
+        location: actions/getGistsById.js
+      patchGistsById:
+        kind: nodejs
+        location: actions/patchGistsById.js
+      getGistsByIdComments:
+        kind: nodejs
+        location: actions/getGistsByIdComments.js
+      postGistsByIdComments:
+        kind: nodejs
+        location: actions/postGistsByIdComments.js
+      deleteGistsByIdCommentsByCommentId:
+        kind: nodejs
+        location: actions/deleteGistsByIdCommentsByCommentId.js
+      getGistsByIdCommentsByCommentId:
+        kind: nodejs
+        location: actions/getGistsByIdCommentsByCommentId.js
+      patchGistsByIdCommentsByCommentId:
+        kind: nodejs
+        location: actions/patchGistsByIdCommentsByCommentId.js
+      postGistsByIdForks:
+        kind: nodejs
+        location: actions/postGistsByIdForks.js
+      deleteGistsByIdStar:
+        kind: nodejs
+        location: actions/deleteGistsByIdStar.js
+      getGistsByIdStar:
+        kind: nodejs
+        location: actions/getGistsByIdStar.js
+      putGistsByIdStar:
+        kind: nodejs
+        location: actions/putGistsByIdStar.js
+      getGitignoreTemplates:
+        kind: nodejs
+        location: actions/getGitignoreTemplates.js
+      getGitignoreTemplatesByLanguage:
+        kind: nodejs
+        location: actions/getGitignoreTemplatesByLanguage.js
+      getIssues:
+        kind: nodejs
+        location: actions/getIssues.js
+      getLegacyIssuesSearchByOwnerByRepositoryByStateByKeyword:
+        kind: nodejs
+        location: actions/getLegacyIssuesSearchByOwnerByRepositoryByStateByKeyword.js
+      getLegacyReposSearchByKeyword:
+        kind: nodejs
+        location: actions/getLegacyReposSearchByKeyword.js
+      getLegacyUserEmailByEmail:
+        kind: nodejs
+        location: actions/getLegacyUserEmailByEmail.js
+      getLegacyUserSearchByKeyword:
+        kind: nodejs
+        location: actions/getLegacyUserSearchByKeyword.js
+      postMarkdown:
+        kind: nodejs
+        location: actions/postMarkdown.js
+      postMarkdownRaw:
+        kind: nodejs
+        location: actions/postMarkdownRaw.js
+      getMeta:
+        kind: nodejs
+        location: actions/getMeta.js
+      getNetworksByOwnerByRepoEvents:
+        kind: nodejs
+        location: actions/getNetworksByOwnerByRepoEvents.js
+      getNotifications:
+        kind: nodejs
+        location: actions/getNotifications.js
+      putNotifications:
+        kind: nodejs
+        location: actions/putNotifications.js
+      getNotificationsThreadsById:
+        kind: nodejs
+        location: actions/getNotificationsThreadsById.js
+      patchNotificationsThreadsById:
+        kind: nodejs
+        location: actions/patchNotificationsThreadsById.js
+      deleteNotificationsThreadsByIdSubscription:
+        kind: nodejs
+        location: actions/deleteNotificationsThreadsByIdSubscription.js
+      getNotificationsThreadsByIdSubscription:
+        kind: nodejs
+        location: actions/getNotificationsThreadsByIdSubscription.js
+      putNotificationsThreadsByIdSubscription:
+        kind: nodejs
+        location: actions/putNotificationsThreadsByIdSubscription.js
+      getOrgsByOrg:
+        kind: nodejs
+        location: actions/getOrgsByOrg.js
+      patchOrgsByOrg:
+        kind: nodejs
+        location: actions/patchOrgsByOrg.js
+      getOrgsByOrgEvents:
+        kind: nodejs
+        location: actions/getOrgsByOrgEvents.js
+      getOrgsByOrgIssues:
+        kind: nodejs
+        location: actions/getOrgsByOrgIssues.js
+      getOrgsByOrgMembers:
+        kind: nodejs
+        location: actions/getOrgsByOrgMembers.js
+      deleteOrgsByOrgMembersByUsername:
+        kind: nodejs
+        location: actions/deleteOrgsByOrgMembersByUsername.js
+      getOrgsByOrgMembersByUsername:
+        kind: nodejs
+        location: actions/getOrgsByOrgMembersByUsername.js
+      getOrgsByOrgPublicMembers:
+        kind: nodejs
+        location: actions/getOrgsByOrgPublicMembers.js
+      deleteOrgsByOrgPublicMembersByUsername:
+        kind: nodejs
+        location: actions/deleteOrgsByOrgPublicMembersByUsername.js
+      getOrgsByOrgPublicMembersByUsername:
+        kind: nodejs
+        location: actions/getOrgsByOrgPublicMembersByUsername.js
+      putOrgsByOrgPublicMembersByUsername:
+        kind: nodejs
+        location: actions/putOrgsByOrgPublicMembersByUsername.js
+      getOrgsByOrgRepos:
+        kind: nodejs
+        location: actions/getOrgsByOrgRepos.js
+      postOrgsByOrgRepos:
+        kind: nodejs
+        location: actions/postOrgsByOrgRepos.js
+      getOrgsByOrgTeams:
+        kind: nodejs
+        location: actions/getOrgsByOrgTeams.js
+      postOrgsByOrgTeams:
+        kind: nodejs
+        location: actions/postOrgsByOrgTeams.js
+      getRateLimit:
+        kind: nodejs
+        location: actions/getRateLimit.js
+      deleteReposByOwnerByRepo:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepo.js
+      getReposByOwnerByRepo:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepo.js
+      patchReposByOwnerByRepo:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepo.js
+      getReposByOwnerByRepoAssignees:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoAssignees.js
+      getReposByOwnerByRepoAssigneesByAssignee:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoAssigneesByAssignee.js
+      getReposByOwnerByRepoBranches:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoBranches.js
+      getReposByOwnerByRepoBranchesByBranch:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoBranchesByBranch.js
+      getReposByOwnerByRepoCollaborators:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCollaborators.js
+      deleteReposByOwnerByRepoCollaboratorsByUser:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoCollaboratorsByUser.js
+      getReposByOwnerByRepoCollaboratorsByUser:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCollaboratorsByUser.js
+      putReposByOwnerByRepoCollaboratorsByUser:
+        kind: nodejs
+        location: actions/putReposByOwnerByRepoCollaboratorsByUser.js
+      getReposByOwnerByRepoComments:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoComments.js
+      deleteReposByOwnerByRepoCommentsByCommentId:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoCommentsByCommentId.js
+      getReposByOwnerByRepoCommentsByCommentId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCommentsByCommentId.js
+      patchReposByOwnerByRepoCommentsByCommentId:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoCommentsByCommentId.js
+      getReposByOwnerByRepoCommits:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCommits.js
+      getReposByOwnerByRepoCommitsByRefStatus:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCommitsByRefStatus.js
+      getReposByOwnerByRepoCommitsByShaCode:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCommitsByShaCode.js
+      getReposByOwnerByRepoCommitsByShaCodeComments:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCommitsByShaCodeComments.js
+      postReposByOwnerByRepoCommitsByShaCodeComments:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoCommitsByShaCodeComments.js
+      getReposByOwnerByRepoCompareByBaseIdHeadId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoCompareByBaseIdHeadId.js
+      deleteReposByOwnerByRepoContentsByPath:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoContentsByPath.js
+      getReposByOwnerByRepoContentsByPath:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoContentsByPath.js
+      putReposByOwnerByRepoContentsByPath:
+        kind: nodejs
+        location: actions/putReposByOwnerByRepoContentsByPath.js
+      getReposByOwnerByRepoContributors:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoContributors.js
+      getReposByOwnerByRepoDeployments:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoDeployments.js
+      postReposByOwnerByRepoDeployments:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoDeployments.js
+      getReposByOwnerByRepoDeploymentsByIdStatuses:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoDeploymentsByIdStatuses.js
+      postReposByOwnerByRepoDeploymentsByIdStatuses:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoDeploymentsByIdStatuses.js
+      getReposByOwnerByRepoDownloads:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoDownloads.js
+      deleteReposByOwnerByRepoDownloadsByDownloadId:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoDownloadsByDownloadId.js
+      getReposByOwnerByRepoDownloadsByDownloadId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoDownloadsByDownloadId.js
+      getReposByOwnerByRepoEvents:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoEvents.js
+      getReposByOwnerByRepoForks:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoForks.js
+      postReposByOwnerByRepoForks:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoForks.js
+      postReposByOwnerByRepoGitBlobs:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoGitBlobs.js
+      getReposByOwnerByRepoGitBlobsByShaCode:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoGitBlobsByShaCode.js
+      postReposByOwnerByRepoGitCommits:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoGitCommits.js
+      getReposByOwnerByRepoGitCommitsByShaCode:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoGitCommitsByShaCode.js
+      getReposByOwnerByRepoGitRefs:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoGitRefs.js
+      postReposByOwnerByRepoGitRefs:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoGitRefs.js
+      deleteReposByOwnerByRepoGitRefsByRef:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoGitRefsByRef.js
+      getReposByOwnerByRepoGitRefsByRef:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoGitRefsByRef.js
+      patchReposByOwnerByRepoGitRefsByRef:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoGitRefsByRef.js
+      postReposByOwnerByRepoGitTags:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoGitTags.js
+      getReposByOwnerByRepoGitTagsByShaCode:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoGitTagsByShaCode.js
+      postReposByOwnerByRepoGitTrees:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoGitTrees.js
+      getReposByOwnerByRepoGitTreesByShaCode:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoGitTreesByShaCode.js
+      getReposByOwnerByRepoHooks:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoHooks.js
+      postReposByOwnerByRepoHooks:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoHooks.js
+      deleteReposByOwnerByRepoHooksByHookId:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoHooksByHookId.js
+      getReposByOwnerByRepoHooksByHookId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoHooksByHookId.js
+      patchReposByOwnerByRepoHooksByHookId:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoHooksByHookId.js
+      postReposByOwnerByRepoHooksByHookIdTests:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoHooksByHookIdTests.js
+      getReposByOwnerByRepoIssues:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssues.js
+      postReposByOwnerByRepoIssues:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoIssues.js
+      getReposByOwnerByRepoIssuesComments:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesComments.js
+      deleteReposByOwnerByRepoIssuesCommentsByCommentId:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoIssuesCommentsByCommentId.js
+      getReposByOwnerByRepoIssuesCommentsByCommentId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesCommentsByCommentId.js
+      patchReposByOwnerByRepoIssuesCommentsByCommentId:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoIssuesCommentsByCommentId.js
+      getReposByOwnerByRepoIssuesEvents:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesEvents.js
+      getReposByOwnerByRepoIssuesEventsByEventId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesEventsByEventId.js
+      getReposByOwnerByRepoIssuesByNumber:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesByNumber.js
+      patchReposByOwnerByRepoIssuesByNumber:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoIssuesByNumber.js
+      getReposByOwnerByRepoIssuesByNumberComments:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesByNumberComments.js
+      postReposByOwnerByRepoIssuesByNumberComments:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoIssuesByNumberComments.js
+      getReposByOwnerByRepoIssuesByNumberEvents:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesByNumberEvents.js
+      deleteReposByOwnerByRepoIssuesByNumberLabels:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoIssuesByNumberLabels.js
+      getReposByOwnerByRepoIssuesByNumberLabels:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoIssuesByNumberLabels.js
+      postReposByOwnerByRepoIssuesByNumberLabels:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoIssuesByNumberLabels.js
+      putReposByOwnerByRepoIssuesByNumberLabels:
+        kind: nodejs
+        location: actions/putReposByOwnerByRepoIssuesByNumberLabels.js
+      deleteReposByOwnerByRepoIssuesByNumberLabelsByName:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoIssuesByNumberLabelsByName.js
+      getReposByOwnerByRepoKeys:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoKeys.js
+      postReposByOwnerByRepoKeys:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoKeys.js
+      deleteReposByOwnerByRepoKeysByKeyId:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoKeysByKeyId.js
+      getReposByOwnerByRepoKeysByKeyId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoKeysByKeyId.js
+      getReposByOwnerByRepoLabels:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoLabels.js
+      postReposByOwnerByRepoLabels:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoLabels.js
+      deleteReposByOwnerByRepoLabelsByName:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoLabelsByName.js
+      getReposByOwnerByRepoLabelsByName:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoLabelsByName.js
+      patchReposByOwnerByRepoLabelsByName:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoLabelsByName.js
+      getReposByOwnerByRepoLanguages:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoLanguages.js
+      postReposByOwnerByRepoMerges:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoMerges.js
+      getReposByOwnerByRepoMilestones:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoMilestones.js
+      postReposByOwnerByRepoMilestones:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoMilestones.js
+      deleteReposByOwnerByRepoMilestonesByNumber:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoMilestonesByNumber.js
+      getReposByOwnerByRepoMilestonesByNumber:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoMilestonesByNumber.js
+      patchReposByOwnerByRepoMilestonesByNumber:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoMilestonesByNumber.js
+      getReposByOwnerByRepoMilestonesByNumberLabels:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoMilestonesByNumberLabels.js
+      getReposByOwnerByRepoNotifications:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoNotifications.js
+      putReposByOwnerByRepoNotifications:
+        kind: nodejs
+        location: actions/putReposByOwnerByRepoNotifications.js
+      getReposByOwnerByRepoPulls:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPulls.js
+      postReposByOwnerByRepoPulls:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoPulls.js
+      getReposByOwnerByRepoPullsComments:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPullsComments.js
+      deleteReposByOwnerByRepoPullsCommentsByCommentId:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoPullsCommentsByCommentId.js
+      getReposByOwnerByRepoPullsCommentsByCommentId:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPullsCommentsByCommentId.js
+      patchReposByOwnerByRepoPullsCommentsByCommentId:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoPullsCommentsByCommentId.js
+      getReposByOwnerByRepoPullsByNumber:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPullsByNumber.js
+      patchReposByOwnerByRepoPullsByNumber:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoPullsByNumber.js
+      getReposByOwnerByRepoPullsByNumberComments:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPullsByNumberComments.js
+      postReposByOwnerByRepoPullsByNumberComments:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoPullsByNumberComments.js
+      getReposByOwnerByRepoPullsByNumberCommits:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPullsByNumberCommits.js
+      getReposByOwnerByRepoPullsByNumberFiles:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPullsByNumberFiles.js
+      getReposByOwnerByRepoPullsByNumberMerge:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoPullsByNumberMerge.js
+      putReposByOwnerByRepoPullsByNumberMerge:
+        kind: nodejs
+        location: actions/putReposByOwnerByRepoPullsByNumberMerge.js
+      getReposByOwnerByRepoReadme:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoReadme.js
+      getReposByOwnerByRepoReleases:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoReleases.js
+      postReposByOwnerByRepoReleases:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoReleases.js
+      deleteReposByOwnerByRepoReleasesAssetsById:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoReleasesAssetsById.js
+      getReposByOwnerByRepoReleasesAssetsById:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoReleasesAssetsById.js
+      patchReposByOwnerByRepoReleasesAssetsById:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoReleasesAssetsById.js
+      deleteReposByOwnerByRepoReleasesById:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoReleasesById.js
+      getReposByOwnerByRepoReleasesById:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoReleasesById.js
+      patchReposByOwnerByRepoReleasesById:
+        kind: nodejs
+        location: actions/patchReposByOwnerByRepoReleasesById.js
+      getReposByOwnerByRepoReleasesByIdAssets:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoReleasesByIdAssets.js
+      getReposByOwnerByRepoStargazers:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoStargazers.js
+      getReposByOwnerByRepoStatsCodeFrequency:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoStatsCodeFrequency.js
+      getReposByOwnerByRepoStatsCommitActivity:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoStatsCommitActivity.js
+      getReposByOwnerByRepoStatsContributors:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoStatsContributors.js
+      getReposByOwnerByRepoStatsParticipation:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoStatsParticipation.js
+      getReposByOwnerByRepoStatsPunchCard:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoStatsPunchCard.js
+      getReposByOwnerByRepoStatusesByRef:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoStatusesByRef.js
+      postReposByOwnerByRepoStatusesByRef:
+        kind: nodejs
+        location: actions/postReposByOwnerByRepoStatusesByRef.js
+      getReposByOwnerByRepoSubscribers:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoSubscribers.js
+      deleteReposByOwnerByRepoSubscription:
+        kind: nodejs
+        location: actions/deleteReposByOwnerByRepoSubscription.js
+      getReposByOwnerByRepoSubscription:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoSubscription.js
+      putReposByOwnerByRepoSubscription:
+        kind: nodejs
+        location: actions/putReposByOwnerByRepoSubscription.js
+      getReposByOwnerByRepoTags:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoTags.js
+      getReposByOwnerByRepoTeams:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoTeams.js
+      getReposByOwnerByRepoWatchers:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoWatchers.js
+      getReposByOwnerByRepoByArchiveFormatByPath:
+        kind: nodejs
+        location: actions/getReposByOwnerByRepoByArchiveFormatByPath.js
+      getRepositories:
+        kind: nodejs
+        location: actions/getRepositories.js
+      getSearchCode:
+        kind: nodejs
+        location: actions/getSearchCode.js
+      getSearchIssues:
+        kind: nodejs
+        location: actions/getSearchIssues.js
+      getSearchRepositories:
+        kind: nodejs
+        location: actions/getSearchRepositories.js
+      getSearchUsers:
+        kind: nodejs
+        location: actions/getSearchUsers.js
+      deleteTeamsByTeamId:
+        kind: nodejs
+        location: actions/deleteTeamsByTeamId.js
+      getTeamsByTeamId:
+        kind: nodejs
+        location: actions/getTeamsByTeamId.js
+      patchTeamsByTeamId:
+        kind: nodejs
+        location: actions/patchTeamsByTeamId.js
+      getTeamsByTeamIdMembers:
+        kind: nodejs
+        location: actions/getTeamsByTeamIdMembers.js
+      deleteTeamsByTeamIdMembersByUsername:
+        kind: nodejs
+        location: actions/deleteTeamsByTeamIdMembersByUsername.js
+      getTeamsByTeamIdMembersByUsername:
+        kind: nodejs
+        location: actions/getTeamsByTeamIdMembersByUsername.js
+      putTeamsByTeamIdMembersByUsername:
+        kind: nodejs
+        location: actions/putTeamsByTeamIdMembersByUsername.js
+      deleteTeamsByTeamIdMembershipsByUsername:
+        kind: nodejs
+        location: actions/deleteTeamsByTeamIdMembershipsByUsername.js
+      getTeamsByTeamIdMembershipsByUsername:
+        kind: nodejs
+        location: actions/getTeamsByTeamIdMembershipsByUsername.js
+      putTeamsByTeamIdMembershipsByUsername:
+        kind: nodejs
+        location: actions/putTeamsByTeamIdMembershipsByUsername.js
+      getTeamsByTeamIdRepos:
+        kind: nodejs
+        location: actions/getTeamsByTeamIdRepos.js
+      putTeamsByTeamIdReposByOrgByRepo:
+        kind: nodejs
+        location: actions/putTeamsByTeamIdReposByOrgByRepo.js
+      deleteTeamsByTeamIdReposByOwnerByRepo:
+        kind: nodejs
+        location: actions/deleteTeamsByTeamIdReposByOwnerByRepo.js
+      getTeamsByTeamIdReposByOwnerByRepo:
+        kind: nodejs
+        location: actions/getTeamsByTeamIdReposByOwnerByRepo.js
+      getUser:
+        kind: nodejs
+        location: actions/getUser.js
+      patchUser:
+        kind: nodejs
+        location: actions/patchUser.js
+      deleteUserEmails:
+        kind: nodejs
+        location: actions/deleteUserEmails.js
+      getUserEmails:
+        kind: nodejs
+        location: actions/getUserEmails.js
+      postUserEmails:
+        kind: nodejs
+        location: actions/postUserEmails.js
+      getUserFollowers:
+        kind: nodejs
+        location: actions/getUserFollowers.js
+      getUserFollowing:
+        kind: nodejs
+        location: actions/getUserFollowing.js
+      deleteUserFollowingByUsername:
+        kind: nodejs
+        location: actions/deleteUserFollowingByUsername.js
+      getUserFollowingByUsername:
+        kind: nodejs
+        location: actions/getUserFollowingByUsername.js
+      putUserFollowingByUsername:
+        kind: nodejs
+        location: actions/putUserFollowingByUsername.js
+      getUserIssues:
+        kind: nodejs
+        location: actions/getUserIssues.js
+      getUserKeys:
+        kind: nodejs
+        location: actions/getUserKeys.js
+      postUserKeys:
+        kind: nodejs
+        location: actions/postUserKeys.js
+      deleteUserKeysByKeyId:
+        kind: nodejs
+        location: actions/deleteUserKeysByKeyId.js
+      getUserKeysByKeyId:
+        kind: nodejs
+        location: actions/getUserKeysByKeyId.js
+      getUserOrgs:
+        kind: nodejs
+        location: actions/getUserOrgs.js
+      getUserRepos:
+        kind: nodejs
+        location: actions/getUserRepos.js
+      postUserRepos:
+        kind: nodejs
+        location: actions/postUserRepos.js
+      getUserStarred:
+        kind: nodejs
+        location: actions/getUserStarred.js
+      deleteUserStarredByOwnerByRepo:
+        kind: nodejs
+        location: actions/deleteUserStarredByOwnerByRepo.js
+      getUserStarredByOwnerByRepo:
+        kind: nodejs
+        location: actions/getUserStarredByOwnerByRepo.js
+      putUserStarredByOwnerByRepo:
+        kind: nodejs
+        location: actions/putUserStarredByOwnerByRepo.js
+      getUserSubscriptions:
+        kind: nodejs
+        location: actions/getUserSubscriptions.js
+      deleteUserSubscriptionsByOwnerByRepo:
+        kind: nodejs
+        location: actions/deleteUserSubscriptionsByOwnerByRepo.js
+      getUserSubscriptionsByOwnerByRepo:
+        kind: nodejs
+        location: actions/getUserSubscriptionsByOwnerByRepo.js
+      putUserSubscriptionsByOwnerByRepo:
+        kind: nodejs
+        location: actions/putUserSubscriptionsByOwnerByRepo.js
+      getUserTeams:
+        kind: nodejs
+        location: actions/getUserTeams.js
+      getUsers:
+        kind: nodejs
+        location: actions/getUsers.js
+      getUsersByUsername:
+        kind: nodejs
+        location: actions/getUsersByUsername.js
+      getUsersByUsernameEvents:
+        kind: nodejs
+        location: actions/getUsersByUsernameEvents.js
+      getUsersByUsernameEventsOrgsByOrg:
+        kind: nodejs
+        location: actions/getUsersByUsernameEventsOrgsByOrg.js
+      getUsersByUsernameFollowers:
+        kind: nodejs
+        location: actions/getUsersByUsernameFollowers.js
+      getUsersByUsernameFollowingByTargetUser:
+        kind: nodejs
+        location: actions/getUsersByUsernameFollowingByTargetUser.js
+      getUsersByUsernameGists:
+        kind: nodejs
+        location: actions/getUsersByUsernameGists.js
+      getUsersByUsernameKeys:
+        kind: nodejs
+        location: actions/getUsersByUsernameKeys.js
+      getUsersByUsernameOrgs:
+        kind: nodejs
+        location: actions/getUsersByUsernameOrgs.js
+      getUsersByUsernameReceivedEvents:
+        kind: nodejs
+        location: actions/getUsersByUsernameReceivedEvents.js
+      getUsersByUsernameReceivedEventsPublic:
+        kind: nodejs
+        location: actions/getUsersByUsernameReceivedEventsPublic.js
+      getUsersByUsernameRepos:
+        kind: nodejs
+        location: actions/getUsersByUsernameRepos.js
+      getUsersByUsernameStarred:
+        kind: nodejs
+        location: actions/getUsersByUsernameStarred.js
+      getUsersByUsernameSubscriptions:
+        kind: nodejs
+        location: actions/getUsersByUsernameSubscriptions.js
